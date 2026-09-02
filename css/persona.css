@@ -1,0 +1,954 @@
+/* =========================
+   game2 共通設定
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+
+    color: #eeeeee;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #252525 0%,
+            #0c0c0c 45%,
+            #000000 100%
+        );
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   ヘッダー
+========================= */
+
+header {
+    position: relative;
+
+    padding: 30px 20px 25px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            180deg,
+            #1c1c1c,
+            #080808
+        );
+
+    border-bottom: 1px solid #777;
+}
+
+header::after {
+    content: "";
+
+    display: block;
+
+    width: 80%;
+    max-width: 900px;
+    height: 1px;
+
+    margin: 25px auto 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #ffffff,
+            transparent
+        );
+}
+
+header > a {
+    color: #bbbbbb;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+header > a:hover {
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   タイトル
+========================= */
+
+h1 {
+    margin: 30px auto 10px;
+
+    color: #ffffff;
+
+    font-size: 3rem;
+    letter-spacing: 0.15em;
+
+    text-shadow:
+        0 0 5px #ffffff55,
+        0 0 15px #ffffff22;
+}
+
+header > p {
+    color: #999999;
+    letter-spacing: 0.1em;
+}
+
+
+/* =========================
+   ナビゲーション
+========================= */
+
+nav {
+    margin-top: 30px;
+}
+
+nav ul {
+    display: flex;
+
+    justify-content: center;
+    gap: 35px;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+nav a {
+    position: relative;
+
+    color: #cccccc;
+
+    text-decoration: none;
+
+    transition:
+        color 0.3s,
+        letter-spacing 0.3s;
+}
+
+nav a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: -6px;
+
+    width: 0;
+    height: 1px;
+
+    background: #ffffff;
+
+    transform: translateX(-50%);
+
+    transition: width 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff;
+    letter-spacing: 0.08em;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+/* =========================
+   メイン
+========================= */
+
+main {
+    width: 90%;
+    max-width: 950px;
+
+    margin: 60px auto;
+}
+
+
+/* =========================
+   メイン画像
+========================= */
+
+main > img {
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+
+    margin: 30px auto;
+
+    border: 1px solid #555;
+
+    box-shadow:
+        0 15px 40px #000000aa;
+}
+
+main > img:first-child {
+    max-height: 500px;
+    object-fit: contain;
+}
+
+main > img:nth-child(2) {
+    max-width: 500px;
+}
+
+
+/* =========================
+   キャッチコピー
+========================= */
+
+main > h2 {
+    margin: 60px auto;
+
+    max-width: 800px;
+
+    padding: 25px 30px;
+
+    color: #eeeeee;
+
+    text-align: center;
+
+    font-size: 1.5rem;
+    font-weight: normal;
+
+    letter-spacing: 0.08em;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #ffffff0d,
+            transparent
+        );
+
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+}
+
+
+/* =========================
+   通常セクション
+========================= */
+
+main > section {
+    margin: 70px auto;
+    padding: 35px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #181818,
+            #0b0b0b
+        );
+
+    border: 1px solid #333;
+
+    box-shadow:
+        0 15px 40px #00000088;
+}
+
+
+/* =========================
+   見出し
+========================= */
+
+h3 {
+    position: relative;
+
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    padding: 12px 15px 12px 25px;
+
+    color: #ffffff;
+
+    font-size: 1.7rem;
+    letter-spacing: 0.08em;
+
+    border-left: 3px solid #ffffff;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ffffff12,
+            transparent
+        );
+}
+
+h3::after {
+    content: "✦";
+
+    position: absolute;
+
+    right: 15px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #ffffff55;
+
+    font-size: 1rem;
+}
+
+
+/* =========================
+   本文
+========================= */
+
+main p {
+    max-width: 75ch;
+
+    margin: 0 auto 1.5em;
+
+    color: #cccccc;
+}
+
+.note {
+    color: #888888;
+
+    font-size: 0.9rem;
+
+    border-left: 2px solid #555;
+
+    padding-left: 15px;
+}
+
+
+/* =========================
+   h4
+========================= */
+
+h4 {
+    position: relative;
+
+    margin-top: 45px;
+    margin-bottom: 20px;
+
+    padding: 10px 15px 10px 40px;
+
+    color: #dddddd;
+
+    font-size: 1.2rem;
+
+    border-left: 2px solid #888;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ffffff0b,
+            transparent
+        );
+}
+
+h4::before {
+    content: "◆";
+
+    position: absolute;
+
+    left: 15px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #999;
+
+    font-size: 0.65rem;
+}
+
+
+/* =========================
+   テーブル
+========================= */
+
+table {
+    width: 100%;
+
+    margin: 25px 0 30px;
+
+    border-collapse: collapse;
+
+    background: #080808;
+}
+
+th,
+td {
+    padding: 12px;
+
+    border: 1px solid #333;
+}
+
+th {
+    width: 25%;
+
+    color: #dddddd;
+
+    background: #1c1c1c;
+
+    text-align: left;
+}
+
+td {
+    color: #aaaaaa;
+}
+
+
+/* =========================
+   details
+========================= */
+
+details {
+    margin: 25px 0;
+
+    border: 1px solid #333;
+
+    background: #0b0b0b;
+}
+
+summary {
+    padding: 12px 15px;
+
+    color: #bbbbbb;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+summary:hover {
+    color: #ffffff;
+
+    background: #ffffff0d;
+}
+
+details p {
+    padding: 0 20px;
+}
+
+
+/* ==================================================
+   STORY
+================================================== */
+
+#story {
+    padding: 35px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #111111,
+            #070707
+        );
+
+    border: 1px solid #444;
+}
+
+
+/* =========================
+   EPISODE 共通
+========================= */
+
+#EPISODE1,
+#EPISODE2,
+#EPISODE2\.5,
+#EPISODE3,
+#EPISODE4,
+#EPISODE5,
+#EPISODE6 {
+
+    position: relative;
+
+    margin: 60px 0;
+    padding: 35px;
+
+    background: #090909;
+
+    border: 1px solid #333;
+
+    box-shadow:
+        inset 0 0 30px #00000099,
+        0 10px 30px #00000088;
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+#EPISODE1:hover,
+#EPISODE2:hover,
+#EPISODE2\.5:hover,
+#EPISODE3:hover,
+#EPISODE4:hover,
+#EPISODE5:hover,
+#EPISODE6:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        inset 0 0 30px #00000099,
+        0 15px 40px #000000aa;
+}
+
+
+/* =========================
+   EPISODE 1
+   BLUE
+========================= */
+
+#EPISODE1 {
+    border-top: 3px solid#a56cff;
+}
+
+#EPISODE1 h4 {
+    color: #bd91ff;
+    border-left-color: #a56cff;
+}
+
+
+/* =========================
+   EPISODE 2
+   PURPLE
+========================= */
+
+#EPISODE2 {
+    border-top: 3px solid #d5ad4a;
+}
+
+#EPISODE2 h4 {
+    color:  #e4c76a;
+    border-left-color: #d5ad4a;
+}
+
+
+/* =========================
+   EPISODE 2.5
+   GOLD
+========================= */
+
+#EPISODE2\.5 {
+    border-top: 3px solid #d5ad4a;
+}
+
+#EPISODE2\.5 h4 {
+    color: #e4c76a;
+    border-left-color: #d5ad4a;
+}
+
+
+/* =========================
+   EPISODE 3
+   RED
+========================= */
+
+#EPISODE3 {
+    border-top: 3px solid #3d8cff;
+}
+
+#EPISODE3 h4 {
+    color: #6fa9ff;
+    border-left-color: #d94b4b;
+}
+
+
+/* =========================
+   EPISODE 4
+   GREEN
+========================= */
+
+#EPISODE4 {
+    border-top: 3px solid #b8ab49;
+}
+
+#EPISODE4 h4 {
+    color: #ced671;
+    border-left-color:  #b8ab49;
+}
+
+
+/* =========================
+   EPISODE 5
+   RED
+========================= */
+
+#EPISODE5 {
+    border-top: 3px solid #d94b4b;
+}
+
+#EPISODE5 h4 {
+    color: #ed7777;
+    border-left-color: #d94b4b;
+}
+
+
+/* =========================
+   EPISODE 6
+   GREEN
+========================= */
+
+#EPISODE6 {
+    border-top: 3px solid #49b878;
+}
+
+#EPISODE6 h4 {
+    color: #71d69a;
+    border-left-color: #49b878;
+}
+
+
+/* =========================
+   EPISODE内画像
+========================= */
+
+#story img {
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+
+    margin: 30px auto;
+
+    border: 1px solid #444;
+
+    box-shadow:
+        0 10px 30px #000000aa;
+}
+
+
+/* =========================
+   GOOD / BAD POINT
+========================= */
+
+#pointo {
+    border-top: 2px solid #888;
+}
+
+#pointo li {
+    margin: 10px 0;
+
+    color: #cccccc;
+}
+
+
+/* =========================
+   OPINION
+========================= */
+
+#opinion {
+    border-top: 2px solid #a56cff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #161019,
+            #080808
+        );
+}
+
+#opinion > em {
+    display: block;
+
+    margin-bottom: 30px;
+    padding: 15px;
+
+    color: #d69cff;
+
+    text-align: center;
+
+    border: 1px solid #7b4d99;
+
+    background: #6b3c8a18;
+}
+
+
+/* =========================
+   ページ下部リンク
+========================= */
+
+main > a {
+    display: inline-block;
+
+    margin: 10px;
+
+    padding: 12px 25px;
+
+    color: #cccccc;
+
+    text-decoration: none;
+
+    border: 1px solid #555;
+
+    background: #111111;
+
+    transition:
+        color 0.3s,
+        background 0.3s,
+        border-color 0.3s;
+}
+
+main > a:hover {
+    color: #ffffff;
+
+    background: #222222;
+
+    border-color: #aaaaaa;
+}
+
+
+/* =========================
+   フッター
+========================= */
+
+footer {
+    margin-top: 100px;
+    padding: 30px 20px;
+
+    color: #777777;
+
+    text-align: center;
+
+    background: #050505;
+
+    border-top: 1px solid #333;
+}
+
+footer p {
+    margin: 8px auto;
+}
+
+
+
+/* =========================
+   COUNTDOWN
+========================= */
+
+#countdown {
+    position: relative;
+
+    max-width: 950px;
+
+    margin: 0 auto 60px;
+    padding: 40px 25px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #181818,
+            #050505
+        );
+
+    border: 1px solid #444;
+
+    box-shadow:
+        0 15px 40px #000000aa;
+}
+
+
+/* 上部ラベル */
+
+.countdown-label {
+    margin-bottom: 10px;
+
+    color: #888;
+
+    font-size: 0.8rem;
+
+    letter-spacing: 0.3em;
+}
+
+
+/* 見出し */
+
+#countdown h2 {
+    margin: 0 0 30px;
+
+    color: #ffffff;
+
+    font-size: 1.6rem;
+
+    font-weight: normal;
+
+    letter-spacing: 0.1em;
+}
+
+
+/* 時間全体 */
+
+.countdown-time {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 20px auto;
+}
+
+
+/* 数字の箱 */
+
+.time-box {
+    min-width: 110px;
+
+    padding: 15px 10px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #252525,
+            #0a0a0a
+        );
+
+    border: 1px solid #555;
+
+    box-shadow:
+        inset 0 0 15px #000000,
+        0 5px 15px #00000088;
+}
+
+
+/* 数字 */
+
+.time-box span {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 2.5rem;
+
+    font-weight: bold;
+
+    font-variant-numeric: tabular-nums;
+
+    text-shadow:
+        0 0 10px #ffffff44;
+}
+
+
+/* DAYSなど */
+
+.time-box small {
+    color: #777;
+
+    font-size: 0.65rem;
+
+    letter-spacing: 0.15em;
+}
+
+
+/* コロン */
+
+.colon {
+    color: #777;
+
+    font-size: 2rem;
+
+    font-weight: bold;
+}
+
+
+/* 下部メッセージ */
+
+.countdown-message {
+    margin: 25px 0 0;
+
+    color: #777;
+
+    font-size: 0.75rem;
+
+    letter-spacing: 0.2em;
+}
+/* =========================
+   スマホ対応
+========================= */
+
+@media (max-width: 700px) {
+
+    
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    main > section {
+        padding: 20px;
+    }
+
+    #story {
+        padding: 15px;
+    }
+
+    #EPISODE1,
+    #EPISODE2,
+    #EPISODE2\.5,
+    #EPISODE3,
+    #EPISODE4,
+    #EPISODE5,
+    #EPISODE6 {
+        padding: 20px;
+    }
+
+    th {
+        width: 35%;
+    }
+    #countdown {
+    padding: 30px 10px;
+}
+
+.countdown-time {
+    gap: 5px;
+}
+
+.time-box {
+    min-width: 65px;
+    padding: 10px 5px;
+}
+
+.time-box span {
+    font-size: 1.5rem;
+}
+
+.time-box small {
+    font-size: 0.5rem;
+}
+
+.colon {
+    font-size: 1.2rem;
+}
+}
+.backup-image {
+    display: block;
+
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+
+    margin: 30px auto;
+
+    border: 1px solid #e4d5c54d;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, .4);
+}

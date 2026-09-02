@@ -194,3 +194,88 @@ th,td{
 .form-group label{
     margin-bottom:6px;
 }
+/* =========================
+   スマホ対応
+========================= */
+
+@media (max-width: 700px) {
+
+  /* コンテンツ全体 */
+  #contents {
+    width: auto;
+    margin: 20px 10px;
+    padding: 25px 15px;
+  }
+
+
+  /* セクション */
+  section {
+    width: auto;
+    max-width: none;
+    margin: 15px auto;
+    padding: 15px;
+  }
+
+
+  /* 見出し */
+  h1 {
+    max-width: 90%;
+    margin: 25px auto;
+    padding: 20px;
+
+    font-size: 180%;
+  }
+
+
+  /* ナビゲーション */
+  nav ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  nav a {
+    padding: 12px;
+  }
+
+
+  /* セクション見出し */
+  .h {
+    font-size: 1.3rem;
+    padding: 8px 12px;
+  }
+
+
+  /* ゲームカード */
+  .game-card {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+
+  /* テーブル */
+  table {
+    font-size: 0.9rem;
+  }
+
+  th,
+  td {
+    padding: 6px;
+  }
+
+
+  /* フォーム */
+  .form-group {
+    width: 100%;
+  }
+
+
+  /* フッター */
+  footer {
+    padding: 15px;
+    font-size: 0.85rem;
+  }
+}
