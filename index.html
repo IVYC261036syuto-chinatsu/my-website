@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>My Profile</title>
+  <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+
+  <header>
+    <h1>サイトタイトル</h1>
+  </header>
+   <div class="subtitle">
+    <p>モバゲー微課金勢によるオヌヌメゲーム紹介</p>
+  </div>
+  <nav>
+  <ul>
+    <li><a href="#intro">はじめに</a></li>
+    <li><a href="#games">オヌヌメゲーム一覧</a></li>
+    <li><a href="#other">その他</a></li>
+  </ul>
+</nav>
+
+<main id="contents">
+
+  <section  id="intro" class="intro">
+    <h2 class="h">はじめに</h2>
+    <p>このサイトは拗らせ逆張りオタクが推しゲーをライトに紹介しつつ、ディープに語ることを目的としています。各リンクに飛ぶと、概要について＋個人的に語りたいことなんかが載ったページに飛びます。<br>
+      <strong><em>※ネタバレやお気持ち長文が含まれる場合がございますのでご注意くだしあ</strong></p>
+  </em></section>
+
+  <section id="games" class="game-list">
+   <h2 class="h">オヌヌメゲーム一覧</h2>
+    <p>こんなゲームをやってるよーん</p>
+
+    <div class="game-container">
+ 
+  <article class="game-card" id="game1">
+      <h3 class="h-sub">TWISTED-WONDERLAND</h3>
+      <img src="img\twst-keyvisual.png" width="500" height="320"alt="TWISTED-WONDERLAND">
+      <table>
+        <tr>
+         <th>制作会社</th>
+        <td>f4samurai</td>
+        </tr>
+        <tr>
+         <th>ジャンル</th>
+         <td>学園アドベンチャー</td>
+       </tr>
+       <tr>
+         <th>対象年齢</th>
+         <td>4+</td>
+       </tr>
+       <tr>
+         <th>課金</th>
+         <td>あり</td>
+       </tr>
+      </table>
+      <p>ゲーム紹介文</p>
+      <a href="twst.html">
+        詳細はこちら
+      </a>
+
+  </article>
+
+  <article class="game-card" id="game2">
+      <h3 class="h-sub">PERSONAシリーズ</h3>
+      <img src="img\persona-keyvisual.webp" width="500" height="320" alt="PERSONA">
+      <table>
+        <tr>
+         <th>制作会社</th>
+        <td>ATLUS</td>
+        </tr>
+        <tr>
+         <th>ジャンル</th>
+         <td>主にRPG</td>
+       </tr>
+       <tr>
+         <th>対象年齢</th>
+         <td>B~C(12~15)</td>
+       </tr>
+       <tr>
+         <th>課金</th>
+         <td>一部あり</td>
+       </tr>
+      </table>
+      <p>ゲーム紹介文</p>
+      <a href="persona.html">
+        詳細はこちら
+      </a>
+
+  </article>
+
+  <article class="game-card" id="game3">
+      <h3 class="h-sub">-Blue Archive-</h3>
+      <img src="img\blue-keyvisu.webp" width="530" height="320"alt="BlueArchive">
+     <table>
+        <tr>
+         <th>制作会社</th>
+        <td>Yostar</td>
+        </tr>
+        <tr>
+         <th>ジャンル</th>
+         <td>学園×青春×物語RPG</td>
+       </tr>
+       <tr>
+         <th>対象年齢</th>
+         <td>13+</td>
+       </tr>
+       <tr>
+         <th>課金</th>
+         <td>あり</td>
+       </tr>
+      </table>
+      <p>ゲーム紹介文</p>
+      <a href="game3.html">
+        詳細はこちら
+      </a>
+
+  </article>
+
+  <article class="game-card" id="game4">
+      <h3 class="h-sub">プロジェクトセカイ カラフルステージ！ feat. 初音ミク</h3>
+      <img src="img\projectSEKAI-keyvisu.webp"width="550" height="320" alt="ゲーム4">
+     <table>
+        <tr>
+         <th>制作会社</th>
+        <td>Colorful Palette</td>
+        </tr>
+        <tr>
+         <th>ジャンル</th>
+         <td>リズムゲーム</td>
+       </tr>
+       <tr>
+         <th>対象年齢</th>
+         <td>全年齢</td>
+       </tr>
+       <tr>
+         <th>課金</th>
+         <td>あり</td>
+       </tr>
+      </table>
+      <p>ゲーム紹介文</p>
+      <a href="game4.html">
+        詳細はこちら
+      </a>
+  </article>
+
+    </div>
+
+  </section>
+
+
+
+  <section id="other" class="other">
+  <h2 class="h">その他</h2>
+  <p>読んでくれてありがとう！よかったら感想を教えてね↓</p>
+<form action="send.php" id="comment-form">
+
+<div class="form-group">
+  <label for="name" >お名前*</label>
+  <input type="text" id="name"required placeholder="風吹けば名無し">
+<small>※ハンドルネーム可</small>  
+</div>
+
+<div class="form-group">
+  <label for="class">クラス*</label>
+  <label><input type="radio" name="radio" required value="1">GM</label>
+  <label><input type="radio" name="radio" required value="2">AI</label>
+  <label><input type="radio" name="radio" required value="3">CS</label>
+</div>
+
+<div class="form-group">
+<label for="playgame">既プレイ</label>
+<label><input type="checkbox" class="game-check" id="game1" name="playedGames"value="TWISTED-WONDERLAND">ツイステ</label>
+<label><input type="checkbox" class="game-check" id="game2" name="playedGames" value="PERSONAシリーズ">ペルソナ</label>
+<label><input type="checkbox" class="game-check" id="game3" name="playedGames" value="BlueArchive">ブルアカ</label>
+<label><input type="checkbox" class="game-check" id="game4" name="playedGames" value="プロジェクトセカイ">プロセカ</label>
+<label><input type="checkbox" id="none" name="playedGames" value="未プレイ"checked>上記どれも未プレイ</label>
+</div>
+
+<div class="form-group">
+  <label for="message">ご意見・ご感想</label>
+  <textarea id="message"></textarea>
+</div>
+
+<div class="form-group">
+  <label for="osigame">オススメゲーム</label>
+  <input>
+</div>
+
+<div class="form-group">
+  <label for="osi1">推し</label>
+  <input>
+</div>
+
+<div class="form-group">
+  <label for="okimochi">お気持ち</label>
+    <textarea id="okimochi"></textarea>
+</div>
+
+  <input type="reset">
+  <button type="submit">送信</button>
+</form>
+
+
+  </section>
+
+</main>
+
+  <footer>
+    <p>© 2026 a.m</p>
+    <p>このサイトはWeb制作学習の授業課題として制作した非営利のサイトです。作品に関する著作権・商標権等は各権利者に帰属します。</p>
+  </footer>
+<script src="js\script.js"></script>
+</body>
+</html>
