@@ -43,3 +43,16 @@ cards.forEach(card => {
     });
 
 });
+const form = document.getElementById('comment-form');
+const thanksMessage = document.getElementById('thanks-message');
+
+form.addEventListener('submit', function(event) {
+    // 本来の送信処理を止める
+    event.preventDefault();
+
+    // フォームを非表示
+    form.style.display = 'none';
+
+    // お礼メッセージを表示
+    thanksMessage.style.display = 'block';
+});

@@ -279,3 +279,170 @@ th,td{
     font-size: 0.85rem;
   }
 }
+/* =========================
+   アンケートフォーム
+========================= */
+
+#comment-form {
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group > label,
+fieldset > legend {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #333;
+
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #bbb;
+    border-radius: 5px;
+
+    background: #fff;
+
+    font-family: inherit;
+    font-size: 1rem;
+
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input[type="text"]:focus,
+.form-group textarea:focus {
+    outline: none;
+
+    border-color: #4a6fa5;
+
+    box-shadow:
+        0 0 5px rgba(74, 111, 165, 0.3);
+}
+
+.form-group small {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #777;
+}
+
+
+/* ラジオ・チェックボックス */
+
+fieldset {
+    margin: 0;
+    padding: 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    background: #fafafa;
+}
+
+fieldset label {
+    display: block;
+
+    margin: 8px 0;
+
+    font-weight: normal;
+
+    cursor: pointer;
+}
+
+
+/* ボタン */
+
+.form-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.form-buttons input,
+.form-buttons button {
+    padding: 10px 25px;
+
+    border: none;
+    border-radius: 6px;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.form-buttons input {
+    background: #ccc;
+    color: #333;
+}
+
+.form-buttons button {
+    background: #4a6fa5;
+    color: white;
+}
+
+.form-buttons input:hover {
+    background: #aaa;
+}
+
+.form-buttons button:hover {
+    background: #34527d;
+}
+#thanks-message {
+    display: none;
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px solid #4a6fa5;
+    border-radius: 8px;
+    background-color: #f4f7fb;
+    color: #34527d;
+}
+
+
+/* =========================
+   フォーム スマホ対応
+========================= */
+
+@media (max-width: 700px) {
+
+    #comment-form {
+        width: 100%;
+    }
+
+    fieldset {
+        padding: 12px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .form-buttons input,
+    .form-buttons button {
+        width: 100%;
+    }
+
+}
